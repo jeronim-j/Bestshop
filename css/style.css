@@ -1,0 +1,101 @@
+:root {
+    --color-primary: #08a6e4;
+    --color-primary-shadow: rgba(7, 172, 230, 0.16);
+    --color-redish: #fb3b64;
+    --color-green: #55dfb4;
+    --color-black: #000000;
+    --color-grey: #a5a5a5;
+    --color-light-grey: #f7f7f7;
+    --color-white: #ffffff;
+    --font-raleway: "Raleway", sans-serif;
+    --font-open-sans: "Open Sans", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--font-open-sans);
+}
+
+.container {
+    width: 1352px;
+    margin: 0 auto;
+}
+
+/*HEADER*/
+
+header {
+    background-color: var(--color-white);
+    box-shadow: 0 3px 6px #00000029;
+    width: 100vw;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.logo {
+    font-family: var(--font-raleway);
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 37px;
+    color: var(--color-primary);
+}
+
+.navMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navButton {
+    font-size: 11px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-grey);
+    font-weight: 700;
+    padding: 27px 47px;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+}
+
+.navButton:hover {
+    border-bottom-color: var(--color-primary);
+    color: var(--color-black);
+}
+
+/*MAINPAGE*/
+
+.mainPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+}
+
+.mainHeader {
+    font-family: var(--font-raleway);
+    font-size: 49px;
+    color: var(--color-black);
+    margin-bottom: 20px;
+}
+
+.mainButton {
+    color: var(--color-white);
+    font-weight: 700;
+    text-align: center;
+    background-color: var(--color-primary);
+    box-shadow: 5px 10px 14px var(--color-primary-shadow);
+    border-radius: 40px;
+    padding: 22px 157px;
+    margin-top: 30px;
+}
