@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>BestShop - Sell More</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Raleway:wght@300;400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -21,12 +21,84 @@
         </div>
     </header>
 
-    <main class="mainPage">
+    <section class="mainPage">
         <h1 class="mainHeader">Sell More!</h1>
         <p class="mainText">Open shop on our platform and increase your sales</p>
         <a class="mainButton">Open your shop</a>
-        <img src="assets/Background.png" alt="Background Image">
-    </main>
+        <img src="assets/Background.png" alt="Background Image" class="mainImage">
+    </section>
 
+    <section class="statistics">
+        <h2>The most popular sales platform in the country</h2>
+        <div class="statisticsArticles">
+            <article class="statisticsArticleContainer">
+                <div class="circle circle1"></div>
+                <img class="articleIcon" src="assets/Person.svg" alt="Person">
+                <h3>100000+</h3>
+                <p>daily entries</p>
+            </article>
+            <article class="statisticsArticleContainer">
+                <div class="circle circle2"></div>
+                <img class="articleIcon" src="assets/Eye.svg" alt="Eye">
+                <h3>2000000+</h3>
+                <p>seen products<br>every day</p>
+            </article>
+            <article class="statisticsArticleContainer">
+                <div class="circle circle3"></div>
+                <img class="articleIcon" src="assets/Catalog.svg" alt="Catalog">
+                <h3>10000+</h3>
+                <p>added posts<br>daily</p>
+            </article>
+        </div>
+    </section>
+
+<!--    <section class="benefits">-->
+<!--        <div class="benefitsContainer">-->
+<!--        -->
+<!--        </div>-->
+<!--    </section>-->
+    <section class="contact">
+        <div class="leftContact">
+            <h3>Any questions?</h3>
+            <p>Leave your email or address or call us!</p>
+            <div class="addressContact">
+                <img src="assets/Mail%20Icon.svg">
+                <p>info@bestshop.xyz</p>
+                <img src="assets/Phone%20Icon.svg">
+                <p>123 456 789</p>
+            </div>
+        </div>
+        <div class="rightContact">
+            <form class="formContact">
+                <label for="name" class="contactLabel">Name</label>
+                <input type="text" id="name" class="contactText">
+                <label for="email" class="contactLabel">E-mail</label>
+                <input type="email" id="email" class="contactText">
+                <label class="contactCheckbox">
+                    <input type="checkbox" id="consent">
+                    <span></span>I hereby give consent for my personal data included
+                    in my application to be processed for the purposes of the recruitment process under the European Parliament’s
+                    and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016,
+                    with regard to the processing of personal data and on the free movement of such data,
+                    and repealing Directive 95/46/EC (Data Protection Directive)
+                </label>
+                <button class="contactButton">Send</button>
+            </form>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footerContainer container">
+            <div class="footerLogo">
+                <a href="#" class="logo">BestShop</a>
+                <span class="footerCopy">© 2019 BestShop LTD, All Rights Reserved</span>
+            </div>
+            <div class="footerIcons">
+                <a href="#"><img src="assets/Twitter.svg" alt="twitter"></a>
+                <a href="#"><img src="assets/Facebook.svg" alt="facebook"></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
