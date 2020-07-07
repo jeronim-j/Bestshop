@@ -172,8 +172,224 @@ header {
 
 /*BENEFITS*/
 
+.benefits {
+    width: 100vw;
+    background-color: var(--color-light-grey);
+    display: flex;
+    justify-content: center;
+    padding: 106px;
+}
+
+.benefitsContainer {
+    width: 1124px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.benefitsSingle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-white);
+    margin: 37px;
+    padding: 91px 36px;
+    float: right;
+    height: 370px;
+    position: relative;
+}
+
+.benefitsSingle h3 {
+    font-family: var(--font-raleway);
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.benefitsSingle:nth-of-type(1) img {
+    width: 386px;
+    height: 219px;
+    margin-left: 100px;
+    z-index: 2;
+}
+
+.benefitsSingle:nth-of-type(2) img {
+    width: 426px;
+    height: 328px;
+    margin-right: 100px;
+    margin-left: 25px;
+    z-index: 2;
+}
+
+.benefitsSingle:nth-of-type(3) img {
+    width: 295px;
+    height: 207px;
+    z-index: 2;
+    position: relative;
+    top: 25px;
+    right: -10px;
+}
+.benefitsSingle:nth-of-type(1)::after {
+    content: "";
+    height: 180px;
+    width: 180px;
+    border-radius: 41px;
+    background-color: var(--color-redish);
+    position: absolute;
+    transform: rotate(45deg);
+    z-index: 1;
+    top: 40px;
+    right: 40px;
+}
+
+.benefitsSingle:nth-of-type(2)::after {
+    content: "";
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    position: absolute;
+    left: 75px;
+    top: 10px;
+    z-index: 1;
+}
+
+.benefitsSingle:nth-of-type(3)::after {
+    content: "";
+    height: 100%;
+    width: 40%;
+    background-color: var(--color-green);
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+
+}
+
+.benefitsSingle p::after {
+    content: "";
+    background-color: var(--color-redish);
+    display: block;
+    width: 70%;
+    height: 5px;
+    margin-top: 30px;
+}
+
+.benefitsSingle:nth-of-type(2) p::after {
+    background-color: var(--color-primary);
+}
+
+.benefitsSingle:nth-of-type(3) p::after {
+    background-color: var(--color-green);
+    width: 60%;
+}
+
+.benefitsSingle > div {
+    width: 50%;
+}
+
+.benefitsSingle:nth-of-type(3) > .break {
+    display: block;
+    width: 10%;
+    height: 200%;
+    background-color: var(--color-light-grey);
+}
+
+
 /*PRICING*/
 
+.pricing {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.pricing > h3 {
+    font-size: 36px;
+    font-family: var(--font-raleway);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.pricingColumns {
+    display: flex;
+}
+
+.pricingColumn {
+    padding: 30px 70px 80px;
+    margin: 50px;
+    text-align: center;
+    border: 1px solid var(--color-redish);
+    border-radius: 18px;
+    position: relative;
+}
+
+.pricingColumn:nth-of-type(2) {
+    border-color: var(--color-primary);
+    box-shadow: 5px 10px 14px var(--color-primary-shadow);
+    transform: scale(1.1);
+}
+
+.pricingColumn:nth-of-type(3) {
+    border-color: var(--color-green);
+}
+
+.pricingColumn > h4 {
+    font-size: 20px;
+    font-family: var(--font-raleway);
+    font-weight: 700;
+}
+
+.pricingColumn > p {
+    font-size: 46px;
+    padding: 20px 0 15px;
+    color: var(--color-redish)
+}
+
+.pricingColumn:nth-of-type(2) > p {
+    color: var(--color-primary);
+}
+
+.pricingColumn:nth-of-type(3) > p {
+    color: var(--color-green);
+}
+
+.pricingColumn > span {
+    font-size: 12px;
+    font-family: var(--font-raleway);
+    font-weight: 700;
+}
+
+.pricingColumn > ul {
+    font-size: 14px;
+    margin-top: 50px;
+}
+
+.pricingColumn > ul > li {
+    margin: 20px;
+}
+
+.pricingColumn > ul > li > img {
+    margin-right: 10px;
+}
+
+.pricingColumn > a {
+    position: absolute;
+    bottom: -24px;
+    right: calc(50% - 80px);
+    color: var(--color-white);
+    border-radius: 23px;
+    background-color: var(--color-redish);
+    padding: 16px 57px;
+}
+
+.pricingColumn:nth-of-type(2) > a {
+    background-color: var(--color-primary);
+    box-shadow: 5px 10px 14px var(--color-primary-shadow);
+}
+
+.pricingColumn:nth-of-type(3) > a {
+    background-color: var(--color-green);
+}
 /*CONTACT*/
 
 .contact {
