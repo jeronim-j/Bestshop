@@ -148,7 +148,7 @@ header {
     padding-left: 30px;
     position: absolute;
 }
-#statistics > div > article:nth-child(2) > img {
+.statisticsArticles > article:nth-child(2) > img {
     padding-top: 7px;
 }
 
