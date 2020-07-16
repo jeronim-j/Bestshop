@@ -60,7 +60,8 @@ header {
     text-transform: uppercase;
     color: var(--color-grey);
     font-weight: 700;
-    padding: 27px 47px;
+    margin: 0 37px;
+    padding: 27px 10px;
     border-bottom: 3px solid transparent;
     cursor: pointer;
 }
@@ -109,7 +110,6 @@ header {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 531px;
 }
 
 .statisticsArticles {
@@ -148,13 +148,15 @@ header {
     padding-left: 30px;
     position: absolute;
 }
+#statistics > div > article:nth-child(2) > img {
+    padding-top: 7px;
+}
 
 .circle {
     height: 60px;
     width: 60px;
     border-radius: 50%;
     position: relative;
-    left: 5px;
     bottom: 5px;
 }
 
@@ -164,6 +166,7 @@ header {
 
 .circle2 {
     background-color: var(--color-primary);
+    left: 10px;
 }
 
 .circle3 {
@@ -173,7 +176,6 @@ header {
 /*BENEFITS*/
 
 .benefits {
-    width: 100vw;
     background-color: var(--color-light-grey);
     display: flex;
     justify-content: center;
@@ -205,6 +207,7 @@ header {
     font-size: 36px;
     margin-bottom: 30px;
 }
+
 
 .benefitsSingle:nth-of-type(1) img {
     width: 386px;
@@ -396,7 +399,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    margin: 60px auto;
+    margin: 120px auto 60px;
 }
 
 .leftContact {
