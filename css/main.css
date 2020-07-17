@@ -356,19 +356,6 @@ textarea {
   padding: 0.2em 0;
 }
 
-:root {
-  --color-primary: #08a6e4;
-  --color-primary-shadow: rgba(7, 172, 230, 0.16);
-  --color-redish: #fb3b64;
-  --color-green: #55dfb4;
-  --color-black: #000000;
-  --color-grey: #a5a5a5;
-  --color-light-grey: #f7f7f7;
-  --color-white: #ffffff;
-  --font-raleway: "Raleway", sans-serif;
-  --font-open-sans: "Open Sans", sans-serif;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -378,7 +365,7 @@ a {
 }
 
 body {
-  font-family: var(--font-open-sans);
+  font-family: "Open Sans", sans-serif;
 }
 
 .container {
@@ -386,9 +373,8 @@ body {
   margin: 0 auto;
 }
 
-/*HEADER*/
 header {
-  background-color: var(--color-white);
+  background-color: #ffffff;
   box-shadow: 0 3px 6px #00000029;
 }
 
@@ -399,10 +385,10 @@ header {
 }
 
 .logo {
-  font-family: var(--font-raleway);
+  font-family: "Raleway", sans-serif;
   font-weight: 300;
   font-size: 2em;
-  color: var(--color-primary);
+  color: #08a6e4;
 }
 
 .navMenu {
@@ -415,7 +401,7 @@ header {
   font-size: 0.6875em;
   text-align: center;
   text-transform: uppercase;
-  color: var(--color-grey);
+  color: #a5a5a5;
   font-weight: 700;
   margin: 0 37px;
   padding: 27px 10px;
@@ -424,11 +410,10 @@ header {
 }
 
 .navButton:hover {
-  border-bottom-color: var(--color-primary);
-  color: var(--color-black);
+  border-bottom-color: #08a6e4;
+  color: #000000;
 }
 
-/*MAINPAGE*/
 .mainPage {
   display: flex;
   flex-direction: column;
@@ -438,18 +423,18 @@ header {
 }
 
 .mainHeader {
-  font-family: var(--font-raleway);
+  font-family: "Raleway", sans-serif;
   font-size: 3.0625em;
-  color: var(--color-black);
+  color: #000000;
   margin-bottom: 20px;
 }
 
 .mainButton {
-  color: var(--color-white);
+  color: #ffffff;
   font-weight: 700;
   text-align: center;
-  background-color: var(--color-primary);
-  box-shadow: 5px 10px 14px var(--color-primary-shadow);
+  background-color: #08a6e4;
+  box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.16);
   border-radius: 40px;
   padding: 22px 157px;
   margin-top: 30px;
@@ -460,7 +445,6 @@ header {
   width: 100%;
 }
 
-/*STATISTICS*/
 .statistics {
   display: flex;
   flex-direction: column;
@@ -474,7 +458,7 @@ header {
 }
 
 .statistics > h2 {
-  font-family: var(--font-raleway);
+  font-family: "Raleway", sans-serif;
   font-size: 2.25em;
   margin: 70px 0 0;
 }
@@ -487,16 +471,16 @@ header {
 }
 
 .statisticsArticleContainer > h3 {
-  font-family: var(--font-raleway);
+  font-family: "Raleway", sans-serif;
   font-size: 1.25em;
   font-weight: 800;
   margin: 20px 0;
 }
 
 .statisticsArticleContainer > p {
-  font-family: var(--font-raleway);
+  font-family: "Raleway", sans-serif;
   font-size: 1.0625em;
-  color: var(--color-grey);
+  color: #a5a5a5;
 }
 
 .articleIcon {
@@ -517,21 +501,20 @@ header {
 }
 
 .circle1 {
-  background-color: var(--color-redish);
+  background-color: #fb3b64;
 }
 
 .circle2 {
-  background-color: var(--color-primary);
+  background-color: #08a6e4;
   left: 10px;
 }
 
 .circle3 {
-  background-color: var(--color-green);
+  background-color: #55dfb4;
 }
 
-/*BENEFITS*/
 .benefits {
-  background-color: var(--color-light-grey);
+  background-color: #f7f7f7;
   display: flex;
   justify-content: center;
   padding: 106px;
@@ -549,7 +532,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--color-white);
+  background-color: #ffffff;
   margin: 37px;
   padding: 91px 36px;
   float: right;
@@ -558,7 +541,7 @@ header {
 }
 
 .benefitsSingle h3 {
-  font-family: var(--font-raleway);
+  font-family: "Raleway", sans-serif;
   font-size: 2.25em;
   margin-bottom: 30px;
 }
@@ -592,7 +575,7 @@ header {
   height: 180px;
   width: 180px;
   border-radius: 41px;
-  background-color: var(--color-redish);
+  background-color: #fb3b64;
   position: absolute;
   transform: rotate(45deg);
   z-index: 1;
@@ -605,7 +588,7 @@ header {
   height: 300px;
   width: 300px;
   border-radius: 50%;
-  background-color: var(--color-primary);
+  background-color: #08a6e4;
   position: absolute;
   left: 75px;
   top: 10px;
@@ -616,7 +599,7 @@ header {
   content: "";
   height: 100%;
   width: 40%;
-  background-color: var(--color-green);
+  background-color: #55dfb4;
   position: absolute;
   right: 0;
   top: 0;
@@ -625,7 +608,7 @@ header {
 
 .benefitsSingle p::after {
   content: "";
-  background-color: var(--color-redish);
+  background-color: #fb3b64;
   display: block;
   width: 70%;
   height: 5px;
@@ -633,11 +616,11 @@ header {
 }
 
 .benefitsSingle:nth-of-type(2) p::after {
-  background-color: var(--color-primary);
+  background-color: #08a6e4;
 }
 
 .benefitsSingle:nth-of-type(3) p::after {
-  background-color: var(--color-green);
+  background-color: #55dfb4;
   width: 60%;
 }
 
@@ -649,10 +632,9 @@ header {
   display: block;
   width: 10%;
   height: 200%;
-  background-color: var(--color-light-grey);
+  background-color: #f7f7f7;
 }
 
-/*PRICING*/
 .pricing {
   display: flex;
   flex-direction: column;
@@ -662,7 +644,7 @@ header {
 
 .pricing > h3 {
   font-size: 2.25em;
-  font-family: var(--font-raleway);
+  font-family: "Raleway", sans-serif;
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -675,44 +657,44 @@ header {
   padding: 30px 70px 80px;
   margin: 50px;
   text-align: center;
-  border: 1px solid var(--color-redish);
+  border: 1px solid #fb3b64;
   border-radius: 18px;
   position: relative;
 }
 
 .pricingColumn:nth-of-type(2) {
-  border-color: var(--color-primary);
-  box-shadow: 5px 10px 14px var(--color-primary-shadow);
+  border-color: #08a6e4;
+  box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.16);
   transform: scale(1.1);
 }
 
 .pricingColumn:nth-of-type(3) {
-  border-color: var(--color-green);
+  border-color: #55dfb4;
 }
 
 .pricingColumn > h4 {
   font-size: 1.25em;
-  font-family: var(--font-raleway);
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
 }
 
 .pricingColumn > p {
   font-size: 2.875em;
   padding: 20px 0 15px;
-  color: var(--color-redish);
+  color: #fb3b64;
 }
 
 .pricingColumn:nth-of-type(2) > p {
-  color: var(--color-primary);
+  color: #08a6e4;
 }
 
 .pricingColumn:nth-of-type(3) > p {
-  color: var(--color-green);
+  color: #55dfb4;
 }
 
 .pricingColumn > span {
   font-size: 0.75em;
-  font-family: var(--font-raleway);
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
 }
 
@@ -733,22 +715,21 @@ header {
   position: absolute;
   bottom: -24px;
   right: calc(50% - 80px);
-  color: var(--color-white);
+  color: #ffffff;
   border-radius: 23px;
-  background-color: var(--color-redish);
+  background-color: #fb3b64;
   padding: 16px 57px;
 }
 
 .pricingColumn:nth-of-type(2) > a {
-  background-color: var(--color-primary);
-  box-shadow: 5px 10px 14px var(--color-primary-shadow);
+  background-color: #08a6e4;
+  box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.16);
 }
 
 .pricingColumn:nth-of-type(3) > a {
-  background-color: var(--color-green);
+  background-color: #55dfb4;
 }
 
-/*CONTACT*/
 .contact {
   display: flex;
   justify-content: center;
@@ -761,7 +742,7 @@ header {
 }
 
 .leftContact > h3 {
-  font-family: var(--font-raleway);
+  font-family: "Raleway", sans-serif;
   font-size: 3.0625em;
   margin-bottom: 22px;
 }
@@ -774,7 +755,7 @@ header {
 
 .addressContact p {
   font-weight: 600;
-  color: var(--color-grey);
+  color: #a5a5a5;
   padding-right: 20px;
   padding-left: 10px;
 }
@@ -792,24 +773,24 @@ header {
 .contactLabel {
   font-weight: 700;
   font-size: 0.6875em;
-  color: var(--color-primary);
+  color: #08a6e4;
 }
 
 .contactText {
   margin-bottom: 15px;
   border: 1px solid transparent;
-  border-bottom: 1px solid var(--color-grey);
+  border-bottom: 1px solid #a5a5a5;
 }
 
 .contactText:focus {
-  border: 1px solid var(--color-primary);
+  border: 1px solid #08a6e4;
 }
 
 .contactCheckbox {
   cursor: pointer;
   display: flex;
   font-size: 0.75em;
-  color: var(--color-grey);
+  color: #a5a5a5;
 }
 
 .contactCheckbox input {
@@ -825,7 +806,7 @@ header {
   width: 24px;
   flex-shrink: 0;
   flex-basis: 24px;
-  border: 1px solid var(--color-grey);
+  border: 1px solid #a5a5a5;
   border-radius: 4px;
   margin-right: 10px;
 }
@@ -842,13 +823,12 @@ header {
   padding: 20px 97px;
   border: none;
   border-radius: 25px;
-  background-color: var(--color-primary);
-  color: var(--color-white);
+  background-color: #08a6e4;
+  color: #ffffff;
   width: 50%;
   align-self: flex-end;
 }
 
-/*FOOTER*/
 footer {
   box-shadow: 0 -5px 40px #00000029;
   padding: 20px 0;
@@ -867,6 +847,6 @@ footer {
 
 .footerCopy {
   font-size: 0.6875em;
-  color: var(--color-grey);
+  color: #a5a5a5;
 }
 /*# sourceMappingURL=main.css.map */

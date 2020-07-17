@@ -1,0 +1,19 @@
+footer {
+  box-shadow: 0 -5px 40px #00000029;
+  padding: 20px 0;
+}
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerLogo {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerCopy {
+  font-size: 0.6875em;
+  color: $color-grey;
+}

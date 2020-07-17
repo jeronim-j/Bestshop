@@ -1,0 +1,40 @@
+header {
+  background-color: $color-white;
+  box-shadow: 0 3px 6px #00000029;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.logo {
+  font-family: $font-raleway;
+  font-weight: 300;
+  font-size: 2em;
+  color: $color-primary;
+}
+
+.navMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navButton {
+  font-size: 0.6875em;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-grey;
+  font-weight: 700;
+  margin: 0 37px;
+  padding: 27px 10px;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+}
+
+.navButton:hover {
+  border-bottom-color: $color-primary;
+  color: $color-black;
+}

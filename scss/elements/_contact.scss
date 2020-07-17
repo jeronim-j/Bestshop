@@ -1,0 +1,99 @@
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 120px auto 60px;
+}
+
+.leftContact {
+  width: 440px;
+}
+
+.leftContact > h3 {
+  font-family: $font-raleway;
+  font-size: 3.0625em;
+  margin-bottom: 22px;
+}
+
+.addressContact {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.addressContact p {
+  font-weight: 600;
+  color: $color-grey;
+  padding-right: 20px;
+  padding-left: 10px;
+}
+
+.rightContact {
+  width: 440px;
+  display: flex;
+}
+
+.formContact {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactLabel {
+  font-weight: 700;
+  font-size: 0.6875em;
+  color: $color-primary;
+}
+
+.contactText {
+  margin-bottom: 15px;
+  border: 1px solid transparent;
+  border-bottom: 1px solid $color-grey;
+}
+
+.contactText:focus {
+  border: 1px solid $color-primary;
+}
+
+.contactCheckbox {
+  cursor: pointer;
+  display: flex;
+  font-size: 0.75em;
+  color: $color-grey;
+}
+
+.contactCheckbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.contactCheckbox span {
+  height: 24px;
+  width: 24px;
+  flex-shrink: 0;
+  flex-basis: 24px;
+  border: 1px solid $color-grey;
+  border-radius: 4px;
+  margin-right: 10px;
+
+}
+
+.contactCheckbox input:checked + span {
+  background-image: url("../assets/Checkmark.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60%;
+}
+
+.contactButton {
+  margin-top: 20px;
+  padding: 20px 97px;
+  border: none;
+  border-radius: 25px;
+  background-color: $color-primary;
+  color: $color-white;
+  width: 50%;
+  align-self: flex-end;
+}
