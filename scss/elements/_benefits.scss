@@ -19,10 +19,13 @@
   align-items: center;
   background-color: $color-white;
   margin: 37px;
-  padding: 91px 36px;
-  float: right;
-  height: 370px;
+  padding: 50px 36px;
+  height: 40%;
   position: relative;
+}
+
+.benefitsSingle:nth-of-type(2) {
+  flex-direction: row-reverse;
 }
 
 .benefitsSingle h3 {
@@ -33,15 +36,15 @@
 
 
 .benefitsSingle:nth-of-type(1) img {
-  width: 386px;
-  height: 219px;
+  width: 50%;
+  height: 90%;
   margin-left: 100px;
   z-index: 2;
 }
 
 .benefitsSingle:nth-of-type(2) img {
-  width: 426px;
-  height: 328px;
+  width: 45%;
+  height: 100%;
   margin-right: 100px;
   margin-left: 25px;
   z-index: 2;
@@ -119,4 +122,62 @@
   width: 10%;
   height: 200%;
   background-color: $color-light-grey;
+}
+
+@media (max-width: 1150px) {
+  .benefits{
+    padding: 0 20px;
+    .benefitsContainer {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 970px) {
+  .benefits {
+    .benefitsContainer {
+      .benefitsSingle {
+        height: 100%;
+        width: 100%;
+        flex-direction: column-reverse;
+        margin: 20px 60px;
+        &:nth-of-type(3) {
+          flex-direction: column;
+          .break {
+            visibility: hidden;
+          }
+        }
+        h3 {
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+        &:nth-of-type(1)::after {
+          height: 25%;
+          width: 15%;
+          border-radius: 25%;
+          left: 55%;
+          top: 5%;
+        }
+        &:nth-of-type(2)::after {
+          height: 30%;
+          width: 30%;
+          left: 30%;
+          top: 10%;
+        }
+        &:nth-of-type(3)::after {
+          height: 45%;
+          width: 100%;
+          top: 55%;
+        }
+        & p::after {
+          visibility: hidden;
+        }
+        img {
+          width: 50%;
+          height: 50%;
+          margin: 0;
+        }
+      }
+    }
+  }
 }

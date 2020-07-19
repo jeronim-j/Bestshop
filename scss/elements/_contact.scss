@@ -6,7 +6,7 @@
 }
 
 .leftContact {
-  width: 440px;
+  width: 33%;
 }
 
 .leftContact > h3 {
@@ -18,7 +18,12 @@
 .addressContact {
   display: flex;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 20px;
+}
+
+.addressContact div {
+  display: flex;
+  align-items: center;
 }
 
 .addressContact p {
@@ -29,7 +34,7 @@
 }
 
 .rightContact {
-  width: 440px;
+  width: 33%;
   display: flex;
 }
 
@@ -96,4 +101,37 @@
   color: $color-white;
   width: 50%;
   align-self: flex-end;
+}
+
+@media (max-width: 1080px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .leftContact {
+      width: 60%;
+
+      .addressContact {
+        flex-direction: column;
+        align-items: flex-start;
+
+        p {
+          margin-top: 7px;
+        }
+      }
+    }
+
+    .rightContact {
+      width: 60%;
+
+      .formContact {
+        margin-top: 25px;
+
+        .contactButton {
+          padding: 20px 35px;
+        }
+      }
+    }
+  }
 }

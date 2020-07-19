@@ -65,3 +65,17 @@
 .circle3 {
   background-color: $color-green;
 }
+
+@media (max-width: 800px) {
+  .statistics {
+    text-align: center;
+    .statisticsArticles {
+      flex-direction: column;
+      .statisticsArticleContainer {
+        margin: 25px 25px;
+      }
+    }
+  }
+
+
+}

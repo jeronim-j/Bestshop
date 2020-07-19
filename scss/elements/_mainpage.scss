@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 130px;
+  overflow-x: hidden;
 }
 
 .mainHeader {
@@ -20,11 +21,12 @@
   background-color: $color-primary;
   box-shadow: 5px 10px 14px $color-primary-shadow;
   border-radius: 40px;
-  padding: 22px 157px;
+  padding: 22px 10%;
   margin-top: 30px;
   cursor: pointer;
 }
 
 .mainImage {
-  width: 100%;
+  max-width: 100%;
+  min-width: 900px;
 }
