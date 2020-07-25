@@ -73,7 +73,7 @@
 
       &::after {
         content: "";
-        background-image: url("../../assets/Arrow.svg");
+        background-image: url("../assets/Arrow.svg");
         width: 22px;
         height: 22px;
         display: block;
@@ -137,11 +137,12 @@
       flex-shrink: 0;
       flex-basis: 24px;
       border: 1px solid $color-grey;
+      background-color: $color-white;
       border-radius: 4px;
       margin: 10px;
     }
     input:checked + span {
-      background-image: url("../../assets/Checkmark.svg");
+      background-image: url("../assets/Checkmark.svg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: 60%;
